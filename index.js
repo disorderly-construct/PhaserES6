@@ -15,6 +15,9 @@ class Game extends Phaser.Game {
           debug: true, // Set this to true to view physics debug lines
         },
       },
+      scale: {
+        autoCenter: Phaser.Scale.CENTER_BOTH
+      },
       scene: [PlayScene],
     });
   }

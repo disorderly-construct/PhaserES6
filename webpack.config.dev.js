@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
@@ -54,6 +55,7 @@ module.exports = {
         }
       ]
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
     static: {
@@ -61,5 +63,6 @@ module.exports = {
     },
     compress: true,
     port: 8080,
+    hot: true,
   },
 }

@@ -12,6 +12,6 @@ export default class PlayScene extends Phaser.Scene {
 
   create() {
       this.add.image(this.cameras.main.width / 2, this.cameras.main.height / 2, 'star');
-      this.add.image(this.cameras.main.width/2, this.cameras.main.height/2,'random');
+      this.add.image(this.cameras.main.width / 2, this.cameras.main.height / 2,'random');
     }
   }
