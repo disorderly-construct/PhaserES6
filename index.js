@@ -1,5 +1,5 @@
 import * as Phaser from 'phaser';
-import PlayScene from './src/states/PlayScene';
+import PlayScene from './src/states/objects/PlayScene';
 
 class Game extends Phaser.Game {
   constructor() {

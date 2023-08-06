@@ -55,7 +55,6 @@ module.exports = {
         }
       ]
     }),
-    new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
     static: {
